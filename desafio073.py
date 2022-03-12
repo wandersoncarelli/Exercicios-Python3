@@ -6,9 +6,9 @@
 # c) Times em ordem alfabética.
 # d) Em que posição está o time da Chapecoense.
 # ======================================================================================================================
-times = ['Atlético MG', 'Flamengo', 'Palmeiras', 'Fortaleza', 'Corinthians', 'Bragantino', 'Fluminense', 'América',
+times = ('Atlético MG', 'Flamengo', 'Palmeiras', 'Fortaleza', 'Corinthians', 'Bragantino', 'Fluminense', 'América',
          'Atlético GO', 'Santos', 'Ceará', 'Internacional', 'São Paulo', 'Athletico PR', 'Cuiabá', 'Juventude',
-         'Grêmio', 'Bahia', 'Sport', 'Chapecoense']
+         'Grêmio', 'Bahia', 'Sport', 'Chapecoense')
 
 print(60 * '=')
 print(16 * ' ', 'CAMPEONATO BRASILEIRO 2021')

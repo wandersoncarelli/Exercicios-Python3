@@ -3,3 +3,14 @@
 # exista lá dentro, ele não será adicionado. No final, serão exibidos todos os valores únicos digitados, em ordem
 # crescente.
 # ======================================================================================================================
+valores = []
+
+print('Digite vários números inteiros para cadastrar em uma lista. Para sair, digite um número negativo.')
+while True:
+    num = int(input('Número: '))
+    if num < 0:
+        break
+    if num not in valores:
+        valores.append(num)
+print()
+print(*sorted(valores))
