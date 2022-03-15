@@ -13,9 +13,9 @@ print()
 print('{}01 -> Oasis - Stop Crying Your Heart Out{}'.format(text['azul'], text['reset']))
 print('{}02 -> Johnny Cash - Hurt{}'.format(text['azul claro'], text['reset']))
 print('{}03 -> KALEO - Way Down We Go{}'.format(text['ciano'], text['reset']))
-m1 = 'desafio021-m1.mp3'
-m2 = 'desafio021-m2.mp3'
-m3 = 'desafio021-m3.mp3'
+m1 = '021 - Musica 01.mp3'
+m2 = '021 - Musica 02.mp3'
+m3 = '021 - Musica 03.mp3'
 print()
 tocar = int(input('Digite o {}número{} referente à música escolhida: '.format(style['sublinhado'], style['reset'])))
 if tocar == 1:
