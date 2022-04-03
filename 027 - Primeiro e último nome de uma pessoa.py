@@ -5,11 +5,8 @@
 # Primeiro = Ana
 # Último = Souza
 # ======================================================================================================================
-from format import text
-n = input('Me diga seu {}nome completo{}, e eu vou dizer qual é seu {}primeiro{} e {}último{} nome:\n'.
-          format(text['magenta'], text['reset'], text['verde'], text['reset'], text['azul'], text['reset'])).strip()
+n = input('Me diga seu nome completo, e eu vou dizer qual é seu primeiro e último nome:\n').strip()
 nome = n.split()
 print()
-print('Seu {}primeiro{} nome é {}{}{}.'.format(text['verde'], text['reset'], text['verde'], nome[0], text['reset']))
-print('Seu {}último{} nome é {}{}{}.'.format(text['azul'], text['reset'], text['azul'], nome[len(nome)-1],
-                                             text['reset']))
+print('Seu primeiro nome é {}.'.format(nome[0]))
+print('Seu último nome é {}.'.format(nome[len(nome)-1]))

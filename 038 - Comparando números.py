@@ -4,17 +4,13 @@
 # - O segundo valor é maior
 # - Não existe valor maior, os dois são iguais
 # ======================================================================================================================
-from format import text
-print('Digite {}dois números{}, e eu vou fazer uma comparação, dizendo qual é o {}maior{} entre eles.'.
-      format(text['magenta'], text['reset'], text['verde'], text['reset']))
-n1 = int(input('{}Primeiro número{}: '.format(text['azul'], text['reset'])))
-n2 = int(input('{}Segundo número{}: '.format(text['ciano'], text['reset'])))
+print('Digite dois números, e eu vou fazer uma comparação, dizendo qual é o maior entre eles.')
+n1 = int(input('Primeiro número: '))
+n2 = int(input('Segundo número: '))
 print()
 if n1 > n2:
-    print('O {}primeiro{} número é maior, sendo o {}número {}{}.'.format(text['azul'], text['reset'], text['azul'], n1,
-                                                                         text['reset']))
+    print('O primeiro número é maior, sendo o número {}.'.format(n1))
 elif n2 > n1:
-    print('O {}segundo{} número é maior, sendo o {}número {}{}.'.format(text['ciano'], text['reset'], text['ciano'], n2,
-                                                                        text['reset']))
+    print('O segundo número é maior, sendo o número {}.'.format(n2))
 else:
-    print('Os {}dois números{} são {}iguais{}.'.format(text['magenta'], text['reset'], text['magenta'], text['reset']))
+    print('Os dois números são iguais.')

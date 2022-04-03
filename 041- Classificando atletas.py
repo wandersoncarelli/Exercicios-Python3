@@ -7,27 +7,20 @@
 # - Até 25 anos: SÊNIOR
 # - Acima: MASTER
 # ======================================================================================================================
-from format import style, text
 from datetime import date
-print('Digite o {}ano de nascimento{} do atleta para ver sua {}categoria{}.'.format(style['sublinhado'], style['reset'],
-                                                                                    text['magenta'], text['reset']))
-nasc = int(input('Nascimento: '))
+print('Digite o ano de nascimento do atleta para ver sua categoria.')
+nascimento = int(input('Nascimento: '))
 atual = date.today().year
-idade = atual - nasc
+idade = atual - nascimento
 print()
-print('O atleta tem {}{}{} anos.'.format(text['magenta'], idade, text['reset']))
+print('O atleta tem {} anos.'.format(idade))
 if idade <= 9:
-    print('A {}categoria{} do atleta é {}MIRIM{}.'.format(text['magenta'], text['reset'], text['magenta'],
-                                                          text['reset']))
+    print('A categoria do atleta é MIRIM.')
 elif idade <= 14:
-    print('A {}categoria{} do atleta é {}INFANTIL{}.'.format(text['magenta'], text['reset'], text['magenta'],
-                                                             text['reset']))
+    print('A categoria do atleta é INFANTIL.')
 elif idade <= 19:
-    print('A {}categoria{} do atleta é {}JUNIOR{}.'.format(text['magenta'], text['reset'], text['magenta'],
-                                                           text['reset']))
+    print('A categoria do atleta é JUNIOR.')
 elif idade <= 25:
-    print('A {}categoria{} do atleta é {}SÊNIOR{}.'.format(text['magenta'], text['reset'], text['magenta'],
-                                                           text['reset']))
+    print('A categoria do atleta é SÊNIOR.')
 else:
-    print('A {}categoria{} do atleta é {}MASTER{}.'.format(text['magenta'], text['reset'], text['magenta'],
-                                                           text['reset']))
+    print('A categoria do atleta é MASTER.')

@@ -4,22 +4,19 @@
 # - Isósceles: dois lados iguais
 # - Escaleno: todos os lados diferentes
 # ======================================================================================================================
-from format import style, text
-print('Digite o {}comprimento de três retas{}, e eu vou dizer se elas {}podem{} ou {}não{} formar um triângulo, e qual '
-      'o {}tipo de triângulo{} formado.'.format(style['sublinhado'], style['reset'], text['verde'], text['reset'],
-                                                text['vermelho'], text['reset'], text['magenta'], text['reset']))
+print('Digite o comprimento de três retas, e eu vou dizer se elas podem ou não formar um triângulo, e qual o tipo de '
+      'triângulo formado.')
 r1 = float(input('Primeiro segmento: '))
 r2 = float(input('Segundo segmento: '))
 r3 = float(input('Terceiro segmento: '))
 print()
 if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
-    print('Os segmentos acima {}podem{} formar um {}Triângulo{} '.format(text['verde'], text['reset'], text['magenta'],
-                                                                         text['reset']), end='')
+    print('Os segmentos acima podem formar um Triângulo', end=' ')
     if r1 == r2 == r3:
-        print('{}Equilátero{}.'.format(text['magenta'], text['reset']))
+        print('Equilátero.')
     elif r1 != r2 != r3 != r1:
-        print('{}Escaleno{}.'.format(text['magenta'], text['reset']))
+        print('Escaleno.')
     else:
-        print('{}Isósceles{}.'.format(text['magenta'], text['reset']))
+        print('Isósceles.')
 else:
-    print('Os segmentos acima {}não podem{} formar um triângulo.'.format(text['vermelho'], text['reset']))
+    print('Os segmentos acima não podem formar um triângulo.')

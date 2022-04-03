@@ -2,9 +2,7 @@
 # Crie um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontram no
 # intervalo de 1 até 500.
 # ======================================================================================================================
-from format import text
-print('Todos os números {}ímpares{} que são {}múltiplos de três{} no intervalo entre 1 e 500 são:'.
-      format(text['magenta'], text['reset'], text['magenta'], text['reset']))
+print('Todos os números ímpares que são múltiplos de três no intervalo entre 1 e 500 são:')
 print()
 soma = 0
 for c in range(1, 50):
@@ -13,5 +11,4 @@ for c in range(1, 50):
             print(c, end=', ')
             soma = soma + c
 print()
-print('A {}soma{} entre todos esses números dá {}{}{}.'.format(text['magenta'], text['reset'], text['magenta'], soma,
-                                                               text['reset']))
+print('A soma entre todos esses números é igual a {}.'.format(soma))
